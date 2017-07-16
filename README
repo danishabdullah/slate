@@ -10,6 +10,7 @@ Slate provides one class, PDF. PDF takes a file-like object and
 will extract all text from the document, presentating each page
 as a string of text:
 
+```python
   >>> with open('example.pdf') as f:
   ...    doc = slate.PDF(f)
   ...
@@ -17,16 +18,17 @@ as a string of text:
   [..., ..., ...]
   >>> doc[1]
   'Text from page 2...'
+```
 
 If your pdf is password protected, pass the password as the
 second argument:
-
+```python
   >>> with open('secrets.pdf') as f:
   ...     doc = slate.PDF(f, 'password')
   ...
   >>> doc[0]
   "My mother doesn't know this, but..."
-
+```
 More complex operations
 -----------------------
 
