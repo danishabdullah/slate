@@ -1,6 +1,6 @@
-======================================================
+
 slate: the easiest way to get text from PDFs in Python
-======================================================
+==
 
 
 Slate is a Python package that simplifies the process of extracting
